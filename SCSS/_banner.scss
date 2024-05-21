@@ -1,0 +1,119 @@
+.banner,
+.banner-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding: 4rem 0;
+}
+
+.slogan{
+    position: relative;
+    padding: 72px;
+    text-align: center;
+    .left-quote{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .right-quote{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    h3{
+        position: relative;
+        font-size: 24px;
+        line-height: 1.2;
+        color: #1E1E1E;
+        text-wrap: none;
+        z-index: 1;
+        img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}
+
+.exp-box{
+    max-width: 636px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .exp{
+        position: relative;
+        text-align: center;
+        color: #3B3B3B;
+        line-height: 1.5;
+        font-size: 16px;
+
+        h3{
+            padding: 0.5rem;
+            color: #5B5B5B;
+        }
+        h3::before{
+            content: "";
+            width: 24px;
+            border: 1px solid #C1C1C1;
+            position: absolute;
+            top: 35px;
+            left: 46%;
+        }
+        // h3{
+        //     position: relative;
+        //     p{
+        //         background-color: blue;
+
+        //     }
+        //     p::before{
+        //         content: "";
+        //         width: 24px;
+        //         border: 1px solid red;
+        //         position: absolute;
+        //         bottom: 0;
+        //     }
+        // }
+    }
+}
+
+.banner-sm{
+    display: none;
+}
+
+@media (max-width: 672px){
+    .banner{
+        display: none;
+    }
+    .banner-sm{
+        display: block;
+    }
+    .slogan{
+        .left-quote{
+            left: 45%;
+        }
+        h3{
+            img{
+                left: 40%;
+            }
+        }
+    }
+    .exp-box{
+        margin: 0 1.5rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 372px){
+    .slogan{
+        h3{
+            img{
+                left: 30%;
+            }
+        }
+    }
+    .exp-box{
+        margin: 0 2.5rem;
+    }
+}
