@@ -1,0 +1,21 @@
+.banner,
+.banner-sm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding: 4rem 0;
+}
+
+.banner-sm{
+    display: none;
+}
+
+@media (max-width: 672px){
+    .banner{
+        display: none;
+    }
+    .banner-sm{
+        display: block;
+    }
+}
