@@ -10,14 +10,10 @@ menuToggle.addEventListener('click', function() {
         menuToggle.innerHTML = `<span class="material-symbols-outlined">
         menu
         </span>`
-
     }else{
         menuToggle.innerHTML = `<span class="material-symbols-outlined">
         close
         </span>`
-        // console.log(body)
-        // body.style.zIndex = -1
-        // body.style.backgroundColor = 'blue'
     }
 })
 
